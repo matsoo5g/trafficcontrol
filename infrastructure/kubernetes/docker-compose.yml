@@ -1,0 +1,197 @@
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+#
+# To use this compose you should first build Traffic Ops and then copy the RPM to :
+#
+# trafficcontrol/infrastructure/cdn-in-a-box/traffic_ops/traffic_ops.rpm
+#
+#      cd trafficcontrol/infrastructure/cdn-in-a-box
+#
+# Adjust the settings in `variables.env` to suit your needs.
+#
+#      docker-compose up -d
+#
+# The Traffic Ops API will then be available on https://localhost:6443,
+# and the postgres database on localhost 5432.
+#
+# Note that this setup is intended for testing and not for production use.
+
+---
+version: '3.7'
+
+services:
+  # db is the Traffic Ops database running in postgresql.  Only trafficops needs to have access to it.
+  # All other components access the database thru the Traffic Ops API
+  db:
+    build:
+      context: .
+      dockerfile: traffic_ops/Dockerfile-db
+    image: cdn-ops-db
+    env_file:
+      - variables.env
+    # TODO: change to expose: "5432" to limit to containers
+
+#  # trafficops runs Traffic Ops in a container.
+  trafficops:
+    build:
+      context: ../..
+      dockerfile: infrastructure/kubernetes/traffic_ops/Dockerfile
+      args:
+        RHEL_VERSION: ${RHEL_VERSION:-8}
+        TRAFFIC_OPS_RPM: infrastructure/kubernetes/traffic_ops/traffic_ops.rpm
+    depends_on:
+      - db
+      - enroller
+      - smtp
+    env_file:
+      - variables.env
+    environment:
+      SKIP_DIG_IP: ${SKIP_DIG_IP:-false}
+      SKIP_TRAFFIC_OPS_DATA: ${SKIP_TRAFFIC_OPS_DATA:-false}
+    image: cdn-ops
+
+  # trafficmonitor is an HTTP service that monitors the caches in a CDN for a variety of metrics
+  trafficmonitor:
+    build:
+      context: .
+      dockerfile: traffic_monitor/Dockerfile
+      args:
+        RHEL_VERSION: ${RHEL_VERSION:-8}
+        TRAFFIC_MONITOR_RPM: traffic_monitor/traffic_monitor.rpm
+    depends_on:
+      - enroller
+    env_file:
+      - variables.env
+    image: cdn-monitor
+
+  # trafficrouter routes clients to the most optimal cache
+  trafficrouter:
+    build:
+      context: .
+      dockerfile: traffic_router/Dockerfile
+      args:
+        RHEL_VERSION: ${RHEL_VERSION:-8}
+        TRAFFIC_ROUTER_RPM: traffic_router/traffic_router.rpm
+        TOMCAT_RPM: traffic_router/tomcat.rpm
+    depends_on:
+      - enroller
+    env_file:
+      - variables.env
+    image: cdn-router
+
+  # trafficstats collect traffic information
+  trafficstats:
+    build:
+      context: .
+      dockerfile: traffic_stats/Dockerfile
+      args:
+        RHEL_VERSION: ${RHEL_VERSION:-8}
+        TRAFFIC_TS_RPM: traffic_stats/traffic_stats.rpm
+    image: cdn-stats
+    depends_on:
+      - enroller
+      - influxdb
+    env_file:
+      - variables.env
+
+  influxdb:
+    build:
+      context: .
+      dockerfile: traffic_stats/Dockerfile-influxdb
+    image: cdn-stat-db
+    env_file:
+      - variables.env
+
+  # trafficvault runs a riak container to store private keys
+  trafficvault:
+    build:
+      context: .
+      dockerfile: traffic_vault/Dockerfile
+    depends_on:
+      - enroller
+    environment:
+      - CLUSTER_NAME=trafficvault
+    labels:
+      - "com.basho.riak.cluster.name=trafficvault"
+    image: cdn-vault
+    env_file:
+      - variables.env
+
+  # edge cache
+  edge:
+    privileged: True
+    build:
+      context: ../..
+      dockerfile: infrastructure/kubernetes/cache/Dockerfile
+      target: edge
+      args:
+        RHEL_VERSION: ${RHEL_VERSION:-8}
+        ORT_RPM: infrastructure/kubernetes/cache/trafficcontrol-cache-config.rpm
+    image: cdn-edge
+    env_file:
+      - variables.env
+
+  mid:
+    privileged: True
+    build:
+      context: ../..
+      dockerfile: infrastructure/kubernetes/cache/Dockerfile
+      target: mid
+      args:
+        RHEL_VERSION: ${RHEL_VERSION:-8}
+        ORT_RPM: infrastructure/kubernetes/cache/trafficcontrol-cache-config.rpm
+    image: cdn-mid
+    env_file:
+      - variables.env
+
+  # origin provides the content to be distributed through the CDN caches
+  origin:
+    build:
+      context: .
+      dockerfile: origin/Dockerfile
+    depends_on:
+      - enroller
+    image: cdn-exp-server
+    env_file:
+      - variables.env
+
+  # enroller provides a way to register component instances with traffic_ops
+  enroller:
+    build:
+      context: ../..
+      dockerfile: infrastructure/kubernetes/enroller/Dockerfile
+    image: cdn-enroller
+    env_file:
+      - variables.env
+
+  smtp:
+    build:
+      context: .
+      dockerfile: smtp/Dockerfile
+    image: cdn-smtp
+    env_file:
+      - variables.env
+
+  # static provides the MaxMind databases and coverage-zone.json, which used to be served by Traffic Ops Perl.
+  static:
+    build:
+      context: ../..
+      dockerfile: infrastructure/kubernetes/static/Dockerfile
+    image: cdn-static
+    env_file:
+      - variables.env
+

@@ -1,0 +1,75 @@
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+############################################################
+# Dockerfile to build Traffic Monitor container images
+# Based on CentOS
+############################################################
+
+ARG RHEL_VERSION
+#ARG TRAFFIC_MONITOR_RPM
+FROM centos:${RHEL_VERSION} AS trafficmonitor-dependencies
+ARG RHEL_VERSION
+ARG TRAFFIC_MONITOR_RPM
+ENV RHEL_VERSION=${RHEL_VERSION}
+ENV TRAFFIC_MONITOR_RPM=${TRAFFIC_MONITOR_RPM}
+
+RUN if [[ "${RHEL_VERSION%%.*}" -eq 7 ]]; then \
+        yum -y install dnf || exit 1; \
+    fi
+
+# Default values for RPM -- override with `docker build --build-arg RPM=...'
+
+RUN dnf install -y epel-release && \
+    dnf install -y \
+        jq \
+        nmap-ncat \
+        iproute \
+        net-tools \
+        gettext \
+        bind-utils \
+        openssl \
+        initscripts && \
+    dnf clean all
+
+FROM trafficmonitor-dependencies AS trafficmonitor
+ADD ${TRAFFIC_MONITOR_RPM} /
+RUN rpm -Uvh /traffic_monitor.rpm && \
+    rm /traffic_monitor.rpm
+
+RUN mkdir -p /opt/traffic_monitor/conf
+ADD traffic_monitor/traffic_monitor.cfg /opt/traffic_monitor/conf/traffic_monitor.cfg.template
+
+ADD enroller/server_template.json \
+    traffic_ops/to-access.sh \
+    /
+
+EXPOSE 80
+ADD traffic_monitor/run.sh /
+CMD /run.sh
+HEALTHCHECK --interval=10s --timeout=1s \
+    CMD bash -c 'source /to-access.sh && [[ "$(curl -s http://trafficmonitor.infra.svc.cluster.local/api/traffic-ops-uri)" == "$TO_URL" ]]'
+
+FROM trafficmonitor-dependencies AS get-delve
+
+RUN dnf -y install golang git && \
+    go get -u github.com/go-delve/delve/cmd/dlv
+
+FROM trafficmonitor AS trafficmonitor-debug
+COPY --from=get-delve /root/go/bin /usr/bin
+
+# Makes the default target skip the trafficmonitor-debug stage
+FROM trafficmonitor
