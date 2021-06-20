@@ -5,45 +5,65 @@ Please follow the proceduces as below.
 
 ### Deployment
 
-1. build the images
+1. Build the images
 need to build RPMs and docker images by docker-compose file
 
 ```
-// at the directory of this repo 
-$ cd infrastructure/kubernetes
-
 // build RPMs, only need to build once, no need to build everytime if there is not code pushed 
 $ make
 
-// build docker
-$ docker-compose -f docker-compose.k8s.yml build
+// build docker images
+$ docker-compose build
 
 ```
 
-2. create namespace
+2. Push images to AWS ECR
 
-under this directory
-
-```
-$ kubectl create -f namespace.yml
-```
-
-3. create volume
-
-need to setup NFS by yourself and create pv and pvc pairs
+ 
+- Modify the script `push_cdn_to_registry.sh` and run it
 
 ```
-$ kubectl create -f pvc.yml
+$ ./push_cdn_to_registry.sh
 ```
 
-4. create environment variables info
-```
-// changed to the settings in our k8s cluster
-$ kubectl create -f env.yml
-```
-
-5. finally, creat CDN components
+3. Setup `kubectl` accessing permission
 
 ```
-$ kubectl create -f cdn.yml
+$ aws eks update-kubeconfig --region $REGION --name $EKS_CLUSTER_NAME
+```
+
+4. Run Matsoo's environment setup
+
+```
+$ ./k8s-conf/boot_matsoo.sh
+```
+
+5. Run computing components
+
+```
+//create the containers which required to be ready first, e.g. databases 
+$ kubectl create -f k8s-config/nodes/db-enroller-smtp.yml
+//wait few seconds then create the other nodes
+$ kubectl create -f k8s-config/nodes/other-components.yml
+```
+
+Optional: you can then create cache servers for verifying the functionality of CDN. 
+These cache servers would not run at Wavelength, since EKS current not support to have this integration.
+
+```
+$ kubectl create -f k8s-config/nodes/cache-servers.yml
+``` 
+
+6. Clean everything
+
+- Remove your computing nodes first
+
+```
+$ kubectl create -f k8s-config/nodes/
+```
+
+- Removing other environment setup
+
+```
+$ ./rm_matsoo.sh
 ```

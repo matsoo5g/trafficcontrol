@@ -1,0 +1,247 @@
+#vault: create credentials
+apiVersion: v1
+kind: Service
+metadata:
+  name: trafficvault
+  namespace: infra
+spec:
+  selector:
+    func: secret
+  ports:
+    - name: port0
+      port: 8088
+    - name: port1
+      port: 8087
+    - name: port2
+      port: 8098
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cdn-vault
+  namespace: infra
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      func: secret
+  template:
+    metadata:
+      labels:
+        func: secret
+    spec:
+      hostname: trafficvault
+      volumes:
+      - name: secret-dir
+        persistentVolumeClaim:
+          claimName: cdn-secret
+      containers:
+      - name: vault
+        image: public.ecr.aws/d7k3x9e1/cdn-vault:v1
+        ports:
+        - containerPort: 8087
+        - containerPort: 8088
+        - containerPort: 8098
+        env:
+        - name: MY_HOSTNAME
+          value: "trafficvault"
+        - name: CLUSTER_NAME
+          value: "trafficvault"
+        volumeMounts:
+          - mountPath: /shared
+            name: secret-dir
+        envFrom:
+          - configMapRef:
+              name: cdn-config
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cdn-stats
+  namespace: infra
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      func: stats
+  template:
+    metadata:
+      labels:
+        func: stats
+    spec:
+      hostname: trafficstats
+      volumes:
+      - name: secret-dir
+        persistentVolumeClaim:
+          claimName: cdn-secret
+      containers:
+      - name: stats
+        image: public.ecr.aws/d7k3x9e1/cdn-stats:v1
+        env:
+        - name: MY_HOSTNAME
+          value: "trafficstats"
+        volumeMounts:
+          - mountPath: /shared
+            name: secret-dir
+        envFrom:
+          - configMapRef:
+              name: cdn-config
+---
+#Router
+apiVersion: v1
+kind: Service
+metadata:
+  name: trafficrouter
+  namespace: infra
+spec:
+  selector:
+    func: router
+  clusterIP: 10.100.160.10
+  ports:
+    - name: dns-tcp
+      protocol: TCP
+      port: 53
+    - name: dns-udp
+      protocol: UDP
+      port: 53
+    - name: port1
+      port: 80
+    - name: port2
+      port: 443
+    - name: port3
+      port: 3333
+    - name: port4
+      port: 3443
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cdn-router
+  namespace: infra
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      func: router
+  template:
+    metadata:
+      labels:
+        func: router
+    spec:
+      hostname: trafficrouter
+      volumes:
+      - name: secret-dir
+        persistentVolumeClaim:
+          claimName: cdn-secret
+      containers:
+      - name: router
+        image: public.ecr.aws/d7k3x9e1/cdn-router:v1
+        env:
+        - name: MY_HOSTNAME
+          value: "trafficrouter"
+        ports:
+        - containerPort: 3333
+        - containerPort: 3443
+        - containerPort: 443
+        - containerPort: 53
+        - containerPort: 80
+        volumeMounts:
+          - mountPath: /shared
+            name: secret-dir
+        envFrom:
+          - configMapRef:
+              name: cdn-config
+---
+#Monitor
+apiVersion: v1
+kind: Service
+metadata:
+  name: trafficmonitor
+  namespace: infra
+spec:
+  selector:
+    func: monitor
+  ports:
+    - port: 80
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cdn-monitor
+  namespace: infra
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      func: monitor
+  template:
+    metadata:
+      labels:
+        func: monitor
+    spec:
+      hostname: trafficmonitor
+      volumes:
+      - name: secret-dir
+        persistentVolumeClaim:
+          claimName: cdn-secret
+      containers:
+      - name: monitor
+        image: public.ecr.aws/d7k3x9e1/cdn-monitor:v1
+        env:
+        - name: MY_HOSTNAME
+          value: "trafficmonitor"
+        ports:
+        - containerPort: 80
+        volumeMounts:
+          - mountPath: /shared
+            name: secret-dir
+        envFrom:
+          - configMapRef:
+              name: cdn-config
+---
+#static! the old perl API server
+apiVersion: v1
+kind: Service
+metadata:
+  name: static
+  namespace: infra
+spec:
+  selector:
+    func: static
+  ports:
+    - port: 443
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cdn-static
+  namespace: infra
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      func: static
+  template:
+    metadata:
+      labels:
+        func: static
+    spec:
+      hostname: static
+      volumes:
+      - name: secret-dir
+        persistentVolumeClaim:
+          claimName: cdn-secret
+      containers:
+      - name: static
+        image: public.ecr.aws/d7k3x9e1/cdn-static:v1
+        env:
+        - name: MY_HOSTNAME
+          value: "static"
+        ports:
+        - containerPort: 443
+        volumeMounts:
+          - mountPath: /shared
+            name: secret-dir
+        envFrom:
+          - configMapRef:
+              name: cdn-config

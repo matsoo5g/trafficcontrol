@@ -53,6 +53,7 @@ until nc -z $TO_FQDN $TO_PORT </dev/null >/dev/null && to-ping; do
 done
 
 mkdir -p "$ENROLLER_DIR"
+mkdir -p /shared/watching_servers
 if [[ ! -d $ENROLLER_DIR ]]; then
   echo "enroller dir ${ENROLLER_DIR} not found or not a directory"
   exit 1
@@ -60,6 +61,7 @@ fi
 
 # clear out the enroller dir first so no files left from previous run
 rm -rf ${ENROLLER_DIR}/*
+rm -rf /shared/watching_servers/* 
 
 enroller_command=(/enroller -dir "$ENROLLER_DIR");
 if [[ "$ENROLLER_DEBUG_ENABLE" == true ]]; then

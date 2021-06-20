@@ -97,7 +97,7 @@ WORKDIR /opt/traffic_ops/app
 ADD traffic_ops/install/bin/install_goose.sh ./
 RUN ./install_goose.sh && rm ./install_goose.sh
 
-ADD infrastructure/cdn-in-a-box/traffic_ops_data /traffic_ops_data
+ADD infrastructure/kubernetes/traffic_ops_data /traffic_ops_data
 
 # Override TRAFFIC_OPS_RPM arg to use a different one using --build-arg TRAFFIC_OPS_RPM=...  Can be local file or http://...
 #
@@ -108,17 +108,14 @@ COPY $TRAFFIC_OPS_RPM /traffic_ops.rpm
 RUN rpm -Uvh /traffic_ops.rpm && \
 	rm /traffic_ops.rpm
 
-COPY infrastructure/cdn-in-a-box/enroller/server_template.json \
-	infrastructure/cdn-in-a-box/traffic_ops/config.sh \
-	infrastructure/cdn-in-a-box/traffic_ops/run-go.sh \
-	infrastructure/cdn-in-a-box/traffic_ops/to-access.sh \
-	infrastructure/cdn-in-a-box/dns/insert-self-into-dns.sh \
-	infrastructure/cdn-in-a-box/dns/set-dns.sh \
-	infrastructure/cdn-in-a-box/traffic_ops/set-to-ips-from-dns.sh \
-	infrastructure/cdn-in-a-box/traffic_ops/generate-certs.sh \
-	infrastructure/cdn-in-a-box/traffic_ops/adduser.pl \
-	infrastructure/cdn-in-a-box/traffic_ops/trafficops-init.sh \
-	infrastructure/cdn-in-a-box/variables.env \
+COPY infrastructure/kubernetes/enroller/server_template.json \
+	infrastructure/kubernetes/traffic_ops/config.sh \
+	infrastructure/kubernetes/traffic_ops/run-go.sh \
+	infrastructure/kubernetes/traffic_ops/to-access.sh \
+	infrastructure/kubernetes/traffic_ops/generate-certs.sh \
+	infrastructure/kubernetes/traffic_ops/adduser.pl \
+	infrastructure/kubernetes/traffic_ops/trafficops-init.sh \
+	infrastructure/kubernetes/variables.env \
 	/
 
 EXPOSE 443
@@ -132,7 +129,7 @@ RUN go get -u github.com/go-delve/delve/cmd/dlv
 
 FROM trafficops AS trafficops-debug
 COPY --from=get-delve /root/go/bin /usr/bin
-COPY infrastructure/cdn-in-a-box/traffic_ops/tv.conf conf/production/
+COPY infrastructure/kubernetes/traffic_ops/tv.conf conf/production/
 
 # Makes the default target skip the trafficops-debug stage
 FROM trafficops

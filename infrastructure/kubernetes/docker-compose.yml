@@ -112,7 +112,7 @@ services:
     build:
       context: .
       dockerfile: traffic_stats/Dockerfile-influxdb
-    image: cdn-stat-db
+    image: cdn-stats-db
     env_file:
       - variables.env
 

@@ -41,9 +41,9 @@ COPY ./go.mod ./go.sum /go/src/github.com/apache/trafficcontrol/
 COPY ./vendor/ /go/src/github.com/apache/trafficcontrol/vendor/
 COPY ./traffic_ops/toclientlib/ /go/src/github.com/apache/trafficcontrol/traffic_ops/toclientlib/
 COPY ./traffic_ops/v4-client/ /go/src/github.com/apache/trafficcontrol/traffic_ops/v4-client/
-COPY ./infrastructure/cdn-in-a-box/ /go/src/github.com/apache/trafficcontrol/infrastructure/cdn-in-a-box/
+COPY ./infrastructure/kubernetes/ /go/src/github.com/apache/trafficcontrol/infrastructure/kubernetes/
 
-WORKDIR /go/src/github.com/apache/trafficcontrol/infrastructure/cdn-in-a-box/enroller
+WORKDIR /go/src/github.com/apache/trafficcontrol/infrastructure/kubernetes/enroller
 RUN set -o errexit -o nounset; \
     go clean; \
     go mod vendor -v; \
@@ -69,10 +69,10 @@ RUN apt-get update && apt-get install -y \
         jq gettext && \
     apt-get clean
 COPY --from=enroller-builder \
-   /go/src/github.com/apache/trafficcontrol/infrastructure/cdn-in-a-box/enroller/enroller \
-   /go/src/github.com/apache/trafficcontrol/infrastructure/cdn-in-a-box/enroller/run.sh \
-   /go/src/github.com/apache/trafficcontrol/infrastructure/cdn-in-a-box/enroller/server_template.json \
-   /go/src/github.com/apache/trafficcontrol/infrastructure/cdn-in-a-box/traffic_ops/to-access.sh \
+   /go/src/github.com/apache/trafficcontrol/infrastructure/kubernetes/enroller/enroller \
+   /go/src/github.com/apache/trafficcontrol/infrastructure/kubernetes/enroller/run.sh \
+   /go/src/github.com/apache/trafficcontrol/infrastructure/kubernetes/enroller/server_template.json \
+   /go/src/github.com/apache/trafficcontrol/infrastructure/kubernetes/traffic_ops/to-access.sh \
    /
 
 WORKDIR /shared/enroller

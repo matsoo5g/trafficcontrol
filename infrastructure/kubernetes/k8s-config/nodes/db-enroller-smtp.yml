@@ -1,0 +1,236 @@
+## 2 DBs: for influxdb: traffic stats, and for db: traffic operations
+apiVersion: v1
+kind: Service
+metadata:
+  name: influxdb 
+  namespace: infra
+spec:
+  selector:
+    func: db
+    role: stat
+  ports:
+    - port: 8086
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cdn-stat-db
+  namespace: infra
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      func: db
+      role: stat
+  template:
+    metadata:
+      labels:
+        func: db
+        role: stat
+    spec:
+      hostname: influxdb
+      volumes:
+      - name: secret-dir
+        persistentVolumeClaim:
+          claimName: cdn-secret
+      containers:
+      - name: stat-db
+        image: public.ecr.aws/d7k3x9e1/cdn-stats-db:v1
+        env:
+        - name: MY_HOSTNAME
+          value: "influxdb"
+        ports:
+        - containerPort: 8086
+        volumeMounts:
+          - mountPath: /shared
+            name: secret-dir
+        envFrom:
+          - configMapRef:
+              name: cdn-config
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: db 
+  namespace: infra
+spec:
+  selector:
+    func: db
+    role: ops
+  ports:
+    - port: 5432
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cdn-ops-db
+  namespace: infra
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      func: db
+      role: ops
+  template:
+    metadata:
+      labels:
+        func: db
+        role: ops
+    spec:
+      hostname: db
+      volumes:
+      - name: secret-dir
+        persistentVolumeClaim:
+          claimName: cdn-secret
+      - name: postgres-data
+        emptyDir: {}
+      containers:
+      - name: ops-db
+        image: public.ecr.aws/d7k3x9e1/cdn-ops-db:v1
+        env:
+        - name: MY_HOSTNAME
+          value: "db"
+        ports:
+        - containerPort: 5432
+        volumeMounts:
+          - mountPath: /shared
+            name: secret-dir
+          - mountPath: /var/lib/postgresql/data
+            name: postgres-data
+        envFrom:
+          - configMapRef:
+              name: cdn-config
+---
+#operation(API) server
+apiVersion: v1
+kind: Service
+metadata:
+  name: trafficops
+  namespace: infra
+spec:
+  selector:
+    func: ops
+  ports:
+    - port: 443
+---
+## Enroller
+apiVersion: v1
+kind: Service
+metadata:
+  name: enroller
+  namespace: infra
+spec:
+  selector:
+    helper: enroller
+## somehow no port exposing in docker-compose file
+  ports:
+    - port: 80
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cdn-ops-enroller
+  namespace: infra
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      func: ops
+      helper: enroller
+  template:
+    metadata:
+      labels:
+        func: ops
+        helper: enroller
+    spec:
+      hostname: trafficops
+      volumes:
+      - name: secret-dir
+        persistentVolumeClaim:
+          claimName: cdn-secret
+      containers:
+      - name: ops-go
+        image: public.ecr.aws/d7k3x9e1/cdn-ops:v1
+        env:
+        - name: MY_HOSTNAME
+          value: "trafficops"
+        ports:
+        - containerPort: 443
+        volumeMounts:
+          - mountPath: /shared
+            name: secret-dir
+        envFrom:
+          - configMapRef:
+              name: cdn-config
+      - name: enroller
+        image: public.ecr.aws/d7k3x9e1/cdn-enroller:v1
+        env:
+        - name: MY_HOSTNAME
+          value: "enroller"
+        ports:
+        - containerPort: 80
+        volumeMounts:
+          - mountPath: /shared
+            name: secret-dir
+        envFrom:
+          - configMapRef:
+              name: cdn-config
+      - name: enroll-helper
+        image: public.ecr.aws/d7k3x9e1/cdn-enroll-helper:v1
+        command:
+        - /bin/bash
+        - -c
+        - "sleep 30 && /run.sh"
+        volumeMounts:
+          - mountPath: /shared
+            name: secret-dir
+## SMTP
+apiVersion: v1
+kind: Service
+metadata:
+  name: smtp
+  namespace: infra
+spec:
+  selector:
+    func: smtp
+  ports:
+    - name: smtp
+      port: 25
+    - name: web
+      port: 443
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cdn-smtp
+  namespace: infra
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      func: smtp
+  template:
+    metadata:
+      labels:
+        func: smtp
+    spec:
+      hostname: smtp
+      volumes:
+      - name: secret-dir
+        persistentVolumeClaim:
+          claimName: cdn-secret
+      containers:
+      - name: smtp
+        image: public.ecr.aws/d7k3x9e1/cdn-smtp:v1
+        env:
+        - name: MY_HOSTNAME
+          value: "smtp"
+        ports:
+        - containerPort: 443
+        - containerPort: 25
+        volumeMounts:
+          - mountPath: /shared
+            name: secret-dir
+        envFrom:
+          - configMapRef:
+              name: cdn-config

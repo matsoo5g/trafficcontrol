@@ -1,0 +1,1069 @@
+Waiting on X509 vars to be defined
+/opt/java/jre/lib/security/cacerts
+Installing certificate /opt/traffic_router/conf/COMODOHigh-AssuranceSecureServerCA.crt..
+Certificate was added to keystore
+
+Warning:
+The input uses the SHA1withRSA signature algorithm which is considered a security risk. This algorithm will be disabled in a future update.
+/opt/java/jre/lib/security/cacerts
+Installing certificate /opt/traffic_router/conf/CIAB-CA-root.crt..
+Certificate was added to keystore
+/opt/java/jre/lib/security/cacerts
+Installing certificate /opt/traffic_router/conf/CIAB-CA-intr.crt..
+Certificate was added to keystore
+Generating 2,048 bit RSA key pair and self-signed certificate (SHA256withRSA) with a validity of 3,650 days
+	for: CN=trafficrouter, OU=APIDefault, O=Apache Traffic Control, L=Denver, ST=Colorado, C=US
+Enter key password for <trafficrouter>
+	(RETURN if same as keystore password):  [Storing /opt/traffic_router/conf/keyStore.jks]
+
+Warning:
+The JKS keystore uses a proprietary format. It is recommended to migrate to PKCS12 which is an industry standard format using "keytool -importkeystore -srckeystore /opt/traffic_router/conf/keyStore.jks -destkeystore /opt/traffic_router/conf/keyStore.jks -deststoretype pkcs12".
+Certificate stored in file <trafficrouter.crt>
+
+Warning:
+The JKS keystore uses a proprietary format. It is recommended to migrate to PKCS12 which is an industry standard format using "keytool -importkeystore -srckeystore /opt/traffic_router/conf/keyStore.jks -destkeystore /opt/traffic_router/conf/keyStore.jks -deststoretype pkcs12".
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for enroller initial data load to complete....
+Waiting for Traffic Monitor to start...
+Waiting for Traffic Monitor to start...
+Waiting for Traffic Monitor to start...
+Waiting for Traffic Monitor to start...
+Waiting for Traffic Monitor to start...
+Waiting for Traffic Monitor to start...
+Waiting for Traffic Monitor to start...
+Waiting for Traffic Monitor to start...
+Waiting for Traffic Monitor to start...
+Waiting for Traffic Monitor to start...
+Waiting for Traffic Monitor to start...
+Waiting for Traffic Monitor to start...
+Waiting for Traffic Monitor to start...
+Waiting for Traffic Monitor to start...
+Waiting for Traffic Monitor to start...
+==> /opt/traffic_router/var/log/traffic_router.log <==
+
+==> /opt/traffic_router/var/log/access.log <==
+tail: cannot open '/opt/tomcat/logs/catalina.log' for reading: No such file or directory
+tail: cannot open '/opt/tomcat/logs/catalina.2021-06-19.log' for reading: No such file or directory
+tail: '/opt/tomcat/logs/catalina.2021-06-19.log' has appeared;  following new file
+
+==> /opt/tomcat/logs/catalina.2021-06-19.log <==
+19-Jun-2021 05:07:49.368 WARNING [main] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidNioProtocol.<clinit> Adding BouncyCastle provider
+19-Jun-2021 05:07:49.573 WARNING [main] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidNioProtocol.<init> Serving wildcard certs for multiple domains
+19-Jun-2021 05:07:49.591 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector] failed to set property [sendReasonPhrase] to [true]
+19-Jun-2021 05:07:49.592 WARNING [main] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidNioProtocol.<init> Serving wildcard certs for multiple domains
+19-Jun-2021 05:07:49.593 WARNING [main] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidNioProtocol.<init> Serving wildcard certs for multiple domains
+19-Jun-2021 05:07:49.594 INFO [main] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidNioProtocol.setSslImplementationName setSslImplementation: com.comcast.cdn.traffic_control.traffic_router.protocol.RouterSslImplementation
+19-Jun-2021 05:07:49.599 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector] failed to set property [sendReasonPhrase] to [true]
+19-Jun-2021 05:07:49.600 WARNING [main] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidNioProtocol.<init> Serving wildcard certs for multiple domains
+19-Jun-2021 05:07:49.600 INFO [main] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidNioProtocol.setSslImplementationName setSslImplementation: com.comcast.cdn.traffic_control.traffic_router.protocol.RouterSslImplementation
+19-Jun-2021 05:07:49.602 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector] failed to set property [sendReasonPhrase] to [true]
+19-Jun-2021 05:07:49.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.43
+19-Jun-2021 05:07:49.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 28 2021 20:25:45 UTC
+19-Jun-2021 05:07:49.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.43.0
+19-Jun-2021 05:07:49.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+19-Jun-2021 05:07:49.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.117-58.216.amzn2.x86_64
+19-Jun-2021 05:07:49.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Jun-2021 05:07:49.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el8_4.x86_64/jre
+19-Jun-2021 05:07:49.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_292-b10
+19-Jun-2021 05:07:49.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Red Hat, Inc.
+19-Jun-2021 05:07:49.663 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /opt/traffic_router
+19-Jun-2021 05:07:49.663 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /opt/tomcat
+19-Jun-2021 05:07:49.663 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/opt/traffic_router/conf/logging.properties
+19-Jun-2021 05:07:49.663 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Jun-2021 05:07:49.663 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.library.path=/usr/lib64
+19-Jun-2021 05:07:49.663 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcache.config.json.refresh.period=5000
+19-Jun-2021 05:07:49.663 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.awt.headless=true
+19-Jun-2021 05:07:49.663 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.security.egd=file:/dev/./urandom
+19-Jun-2021 05:07:49.663 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-Jun-2021 05:07:49.663 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-Jun-2021 05:07:49.663 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+19-Jun-2021 05:07:49.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xms2g
+19-Jun-2021 05:07:49.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xmx8g
+19-Jun-2021 05:07:49.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.library.path=/usr/lib64:/opt/traffic_router/lib:/opt/tomcat/lib
+19-Jun-2021 05:07:49.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dlog4j.configuration=file:///opt/traffic_router/conf/log4j.properties
+19-Jun-2021 05:07:49.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.connector.Response.ENFORCE_ENCODING_IN_GET_WRITER=false
+19-Jun-2021 05:07:49.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -XX:+UseG1GC
+19-Jun-2021 05:07:49.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -XX:+UnlockExperimentalVMOptions
+19-Jun-2021 05:07:49.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -XX:InitiatingHeapOccupancyPercent=30
+19-Jun-2021 05:07:49.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-Jun-2021 05:07:49.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/opt/traffic_router
+19-Jun-2021 05:07:49.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/opt/tomcat
+19-Jun-2021 05:07:49.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/opt/traffic_router/temp
+19-Jun-2021 05:07:49.671 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.23] using APR version [1.6.3].
+19-Jun-2021 05:07:49.671 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+19-Jun-2021 05:07:49.671 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+19-Jun-2021 05:07:49.678 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1g FIPS  21 Apr 2020]
+19-Jun-2021 05:07:50.107 INFO [main] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidNioProtocol.init Init called; creating thread to monitor the state of Traffic Router
+19-Jun-2021 05:07:50.108 INFO [main] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidNioProtocol.init Init called; creating thread to monitor the state of Traffic Router
+19-Jun-2021 05:07:50.110 INFO [main] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidNioProtocol.init Init called; creating thread to monitor the state of Traffic Router
+19-Jun-2021 05:07:50.114 INFO [main] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidNioProtocol.init Init called; creating thread to monitor the state of Traffic Router
+19-Jun-2021 05:07:50.118 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1392] milliseconds
+19-Jun-2021 05:07:50.132 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [traffic_router_core]
+19-Jun-2021 05:07:50.133 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.43]
+
+==> /opt/traffic_router/var/log/traffic_router.log <==
+INFO  2021-06-19T05:07:50.109 [Thread-3] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidPoller - Waiting for state from mbean path traffic-router:name=languidState
+INFO  2021-06-19T05:07:50.111 [Thread-4] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidPoller - Waiting for state from mbean path traffic-router:name=languidState
+INFO  2021-06-19T05:07:50.114 [Thread-5] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidPoller - Waiting for state from mbean path traffic-router:name=languidState
+INFO  2021-06-19T05:07:50.121 [Thread-6] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidPoller - Waiting for state from mbean path traffic-router:name=languidState
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/opt/traffic_router/webapps/ROOT/WEB-INF/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/traffic_router/lib/slf4j-log4j12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+
+==> /opt/tomcat/logs/catalina.2021-06-19.log <==
+19-Jun-2021 05:07:53.750 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Jun-2021 05:07:53.776 INFO [main] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+19-Jun-2021 05:07:53.792 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+
+==> /opt/traffic_router/var/log/traffic_router.log <==
+INFO  2021-06-19T05:07:55.093 [main] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [FederationsWatcher] Fetching external resource https://${toHostname}/api/2.0/federations/all at interval: 300000 : MILLISECONDS next update occurrs at Sat Jun 19 05:12:55 UTC 2021
+INFO  2021-06-19T05:07:55.099 [main] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] Fetching external resource https://${toHostname}/api/2.0/steering at interval: 10000 : MILLISECONDS next update occurrs at Sat Jun 19 05:08:05 UTC 2021
+INFO  2021-06-19T05:07:55.123 [main] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [GeolocationDatabaseUpdater] Fetching external resource null at interval: 86400000 : MILLISECONDS next update occurrs at Sun Jun 20 05:07:55 UTC 2021
+INFO  2021-06-19T05:07:55.135 [main] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [NetworkUpdater] Fetching external resource null at interval: 10800000 : MILLISECONDS next update occurrs at Sat Jun 19 08:07:55 UTC 2021
+INFO  2021-06-19T05:07:55.143 [main] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [DeepNetworkUpdater] Fetching external resource null at interval: 10800000 : MILLISECONDS next update occurrs at Sat Jun 19 08:07:55 UTC 2021
+INFO  2021-06-19T05:07:55.150 [main] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [RegionalGeoUpdater] Fetching external resource null at interval: 10800000 : MILLISECONDS next update occurrs at Sat Jun 19 08:07:55 UTC 2021
+INFO  2021-06-19T05:07:55.154 [main] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [AnonymousIpConfigUpdater] Fetching external resource null at interval: 10800000 : MILLISECONDS next update occurrs at Sat Jun 19 08:07:55 UTC 2021
+INFO  2021-06-19T05:07:55.159 [main] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [AnonymousIpDatabaseUpdater] Fetching external resource null at interval: 10800000 : MILLISECONDS next update occurrs at Sat Jun 19 08:07:55 UTC 2021
+INFO  2021-06-19T05:07:55.208 [main] com.comcast.cdn.traffic_control.traffic_router.core.secure.CertificatesPoller - No custom value for certificates.polling.interval
+INFO  2021-06-19T05:07:55.208 [main] com.comcast.cdn.traffic_control.traffic_router.core.secure.CertificatesPoller - Using default fixed rate polling interval 3600000 msec
+INFO  2021-06-19T05:07:55.208 [main] com.comcast.cdn.traffic_control.traffic_router.core.secure.CertificatesPoller - Polling for certificates every 3600000 msec
+INFO  2021-06-19T05:07:55.210 [main] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [LetsEncryptDnsChallengeWatcher] Fetching external resource https://${toHostname}/api/2.0/letsencrypt/dnsrecords/ at interval: 60000 : MILLISECONDS next update occurrs at Sat Jun 19 05:08:55 UTC 2021
+ERROR 2021-06-19T05:07:55.217 [pool-2-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.secure.CertificatesClient - No traffic ops hostname yet!
+INFO  2021-06-19T05:07:55.226 [main] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - Loading properties from /opt/traffic_router/conf/traffic_monitor.properties
+INFO  2021-06-19T05:07:55.227 [main] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - traffic_monitor.bootstrap.hosts: [trafficmonitor.infra.svc.cluster.local:80]
+INFO  2021-06-19T05:07:55.637 [main] com.comcast.cdn.traffic_control.traffic_router.core.util.PeriodicResourceUpdater - Starting schedule with interval: 5000 : MILLISECONDS
+INFO  2021-06-19T05:07:55.638 [main] com.comcast.cdn.traffic_control.traffic_router.core.util.PeriodicResourceUpdater - Waiting for valid: /opt/traffic_router/db/cr-config.json
+WARN  2021-06-19T05:07:55.934 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.util.PeriodicResourceUpdater - failed to GET http://trafficmonitor.infra.svc.cluster.local:80/publish/CrConfig?json - returned status code 503
+ERROR 2021-06-19T05:08:00.219 [pool-2-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.secure.CertificatesClient - No traffic ops hostname yet!
+INFO  2021-06-19T05:08:00.638 [main] com.comcast.cdn.traffic_control.traffic_router.core.util.PeriodicResourceUpdater - Waiting for valid: /opt/traffic_router/db/cr-config.json
+WARN  2021-06-19T05:08:00.826 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.util.PeriodicResourceUpdater - failed to GET http://trafficmonitor.infra.svc.cluster.local:80/publish/CrConfig?json - returned status code 503
+ERROR 2021-06-19T05:08:05.219 [pool-2-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.secure.CertificatesClient - No traffic ops hostname yet!
+INFO  2021-06-19T05:08:05.639 [main] com.comcast.cdn.traffic_control.traffic_router.core.util.PeriodicResourceUpdater - Waiting for valid: /opt/traffic_router/db/cr-config.json
+INFO  2021-06-19T05:08:05.855 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:08:05.877 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [NetworkUpdater] Restarting schedule for https://static.infra.svc.cluster.local/czmap.json with interval: 3600000
+INFO  2021-06-19T05:08:05.878 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [NetworkUpdater] Stopping service updater
+WARN  2021-06-19T05:08:05.878 [Thread-8] com.comcast.cdn.traffic_control.traffic_router.core.loc.MaxmindGeolocationService - /opt/traffic_router/db/GeoLite2-City.mmdb does not exist yet!
+INFO  2021-06-19T05:08:05.878 [Thread-8] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [GeolocationDatabaseUpdater] Downloading database: https://static.infra.svc.cluster.local/GeoLite2-City.mmdb.gz
+INFO  2021-06-19T05:08:05.878 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [NetworkUpdater] Fetching external resource null at interval: 3600000 : MILLISECONDS next update occurrs at Sat Jun 19 06:08:05 UTC 2021
+INFO  2021-06-19T05:08:05.887 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - regional_geoblock.polling.url not configured; stopping service updater
+INFO  2021-06-19T05:08:05.887 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [RegionalGeoUpdater] Stopping service updater
+INFO  2021-06-19T05:08:05.887 [Thread-9] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [NetworkUpdater] Downloading database: https://static.infra.svc.cluster.local/czmap.json
+INFO  2021-06-19T05:08:05.888 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - anonymousip.policy.configuration not configured; stopping service updater and disabling feature
+INFO  2021-06-19T05:08:05.888 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [AnonymousIpConfigUpdater] Stopping service updater
+INFO  2021-06-19T05:08:05.911 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.ds.DeliveryService - DeliveryService 'demo1' has configured geolocation provider 'maxmindGeolocationService'
+INFO  2021-06-19T05:08:05.911 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.ds.DeliveryService - DeliveryService 'demo2' has configured geolocation provider 'maxmindGeolocationService'
+INFO  2021-06-19T05:08:05.945 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.secure.CertificatesPoller - Using custom fixed rate polling interval 300000 msec
+INFO  2021-06-19T05:08:05.953 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.secure.CertificatesPoller - Polling for certificates every 300000 msec
+INFO  2021-06-19T05:08:05.955 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Checking for certificate for demo1
+INFO  2021-06-19T05:08:05.957 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Waiting for https certificates to support new config 19d79526
+INFO  2021-06-19T05:08:06.290 [Thread-9] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [NetworkUpdater] Successfully updated database /opt/traffic_router/db/czmap.json
+INFO  2021-06-19T05:08:06.958 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Waiting for https certificates to support new config 19d79526
+INFO  2021-06-19T05:08:07.958 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Waiting for https certificates to support new config 19d79526
+INFO  2021-06-19T05:08:08.018 [Thread-8] com.comcast.cdn.traffic_control.traffic_router.core.loc.MaxmindGeolocationService - Loading MaxMind db: /opt/traffic_router/temp/loc8305729422891078900.dat
+INFO  2021-06-19T05:08:08.029 [Thread-8] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [GeolocationDatabaseUpdater] Successfully updated database /opt/traffic_router/db/GeoLite2-City.mmdb
+INFO  2021-06-19T05:08:08.029 [Thread-8] com.comcast.cdn.traffic_control.traffic_router.core.loc.MaxmindGeolocationService - Loading MaxMind db: /opt/traffic_router/db/GeoLite2-City.mmdb
+INFO  2021-06-19T05:08:08.958 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Waiting for https certificates to support new config 19d79526
+INFO  2021-06-19T05:08:09.959 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Waiting for https certificates to support new config 19d79526
+INFO  2021-06-19T05:08:10.260 [pool-2-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - POSTing: https://trafficops.infra.svc.cluster.local:443/api/2.0/user/login; timeout is 15000
+INFO  2021-06-19T05:08:10.442 [pool-2-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/cdns/name/CDN-in-a-Box/sslkeys; timeout is 15000
+INFO  2021-06-19T05:08:10.562 [pool-2-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - POSTing: https://trafficops.infra.svc.cluster.local:443/api/2.0/user/login; timeout is 15000
+INFO  2021-06-19T05:08:10.642 [main] com.comcast.cdn.traffic_control.traffic_router.core.util.PeriodicResourceUpdater - Waiting for valid: /opt/traffic_router/db/cr-config.json
+INFO  2021-06-19T05:08:10.651 [pool-2-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/cdns/name/CDN-in-a-Box/sslkeys; timeout is 15000
+WARN  2021-06-19T05:08:10.855 [Thread-7] com.comcast.cdn.traffic_control.traffic_router.secure.CertificateRegistry - Imported handshake data with alias demo1.mycdn.ciab.test
+INFO  2021-06-19T05:08:10.959 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Waiting for https certificates to support new config 19d79526
+INFO  2021-06-19T05:08:11.965 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Edge Traffic Router "ONLINE" trafficrouter @ CDN_in_a_Box_Edge; Geolocation [latitude=38.897663, longitude=-77.036574]
+ERROR 2021-06-19T05:08:11.980 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.edge.Node - trafficrouter.infra.svc.cluster.local - no IPv6 address configured!
+ERROR 2021-06-19T05:08:11.987 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.edge.Node - edge.infra.svc.cluster.local - no IPv6 address configured!
+INFO  2021-06-19T05:08:12.001 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [FederationsWatcher] Restarting schedule for https://trafficops.infra.svc.cluster.local/api/2.0/federations/all with interval: 60000
+INFO  2021-06-19T05:08:12.001 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [FederationsWatcher] Stopping service updater
+INFO  2021-06-19T05:08:12.002 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [FederationsWatcher] Fetching external resource https://${toHostname}/api/2.0/federations/all at interval: 60000 : MILLISECONDS next update occurrs at Sat Jun 19 05:09:12 UTC 2021
+INFO  2021-06-19T05:08:12.002 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] Restarting schedule for https://${toHostname}/api/2.0/steering with interval: 60000
+INFO  2021-06-19T05:08:12.002 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] Stopping service updater
+INFO  2021-06-19T05:08:12.003 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] Fetching external resource https://${toHostname}/api/2.0/steering at interval: 60000 : MILLISECONDS next update occurrs at Sat Jun 19 05:09:12 UTC 2021
+INFO  2021-06-19T05:08:12.010 [Thread-10] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - POSTing: https://trafficops.infra.svc.cluster.local:443/api/2.0/user/login; timeout is 15000
+INFO  2021-06-19T05:08:12.019 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.SignatureManager - DNSSEC not enabled; to enable, activate DNSSEC for this Traffic Router's CDN in Traffic Ops
+INFO  2021-06-19T05:08:12.097 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - Generating zone data
+INFO  2021-06-19T05:08:12.154 [pool-4-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - writing: /opt/traffic_router/var/auto-zones/demo1.mycdn.ciab.test.
+INFO  2021-06-19T05:08:12.157 [pool-4-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - writing: /opt/traffic_router/var/auto-zones/demo2.mycdn.ciab.test.
+INFO  2021-06-19T05:08:12.171 [pool-4-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - writing: /opt/traffic_router/var/auto-zones/mycdn.ciab.test.
+INFO  2021-06-19T05:08:12.172 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - Zone generation complete
+INFO  2021-06-19T05:08:12.173 [pool-4-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - Priming video.demo2.mycdn.ciab.test.
+INFO  2021-06-19T05:08:12.178 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - Priming zone cache completed in PT0.004S
+INFO  2021-06-19T05:08:12.178 [Thread-10] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local/api/2.0/federations/all; timeout is 15000
+INFO  2021-06-19T05:08:12.182 [pool-6-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - starting maintenance on DYNAMIC zone cache: 73643908. Current size: 1
+INFO  2021-06-19T05:08:12.186 [pool-6-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - completed maintenance on DYNAMIC zone cache: 73643908
+INFO  2021-06-19T05:08:12.187 [pool-6-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - starting maintenance on STATIC zone cache: 58ff9478. Current size: 3
+INFO  2021-06-19T05:08:12.187 [pool-6-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - completed maintenance on STATIC zone cache: 58ff9478
+INFO  2021-06-19T05:08:12.187 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - old static zone cache size: 0, new static zone cache size: 3, old dynamic zone cache size: 0, new dynamic zone cache size: 1
+INFO  2021-06-19T05:08:12.187 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - Initialization of zone data completed
+WARN  2021-06-19T05:08:12.189 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.router.TrafficRouter - Application Context not yet ready, skipping calling listeners of configuration change
+INFO  2021-06-19T05:08:12.194 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exit: processConfig, successfully applied snapshot from Sat Jun 19 05:07:34 UTC 2021
+INFO  2021-06-19T05:08:12.195 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.util.PeriodicResourceUpdater - updated /opt/traffic_router/db/cr-config.json
+INFO  2021-06-19T05:08:12.209 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:08:12.210 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:08:12.262 [Thread-10] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [FederationsWatcher] Successfully updated database /opt/traffic_router/db/federations.json
+INFO  2021-06-19T05:08:15.644 [main] com.comcast.cdn.traffic_control.traffic_router.core.util.PeriodicResourceUpdater - Starting schedule with interval: 1000 : MILLISECONDS
+INFO  2021-06-19T05:08:15.644 [main] com.comcast.cdn.traffic_control.traffic_router.core.util.PeriodicResourceUpdater - Waiting for valid: /opt/traffic_router/db/health.json
+INFO  2021-06-19T05:08:15.664 [AsyncHttpClient-5-1] com.comcast.cdn.traffic_control.traffic_router.core.util.PeriodicResourceUpdater - updated /opt/traffic_router/db/health.json
+INFO  2021-06-19T05:08:15.829 [pool-3-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.PeriodicResourceUpdater - Database /opt/traffic_router/db/cr-config.json does not require updating.
+
+==> /opt/tomcat/logs/catalina.2021-06-19.log <==
+19-Jun-2021 05:08:16.881 INFO [Thread-3] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidNioProtocol.init Traffic Router SSL Protocol is ready; calling super.init()
+19-Jun-2021 05:08:16.882 INFO [Thread-3] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+19-Jun-2021 05:08:16.901 INFO [Thread-5] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidNioProtocol.init Traffic Router SSL Protocol is ready; calling super.init()
+19-Jun-2021 05:08:16.901 INFO [Thread-4] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidNioProtocol.init Traffic Router SSL Protocol is ready; calling super.init()
+19-Jun-2021 05:08:16.901 INFO [Thread-5] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-openssl-nio-3443"]
+19-Jun-2021 05:08:16.901 INFO [Thread-4] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-3333"]
+19-Jun-2021 05:08:16.936 INFO [Thread-6] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidNioProtocol.init Traffic Router SSL Protocol is ready; calling super.init()
+19-Jun-2021 05:08:16.936 INFO [17] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-openssl-nio-443"]
+19-Jun-2021 05:08:17.001 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'status'
+
+==> /opt/traffic_router/var/log/traffic_router.log <==
+INFO  2021-06-19T05:08:16.858 [main] com.comcast.cdn.traffic_control.traffic_router.core.secure.CertificatesPoller - Using custom fixed rate polling interval 300000 msec
+INFO  2021-06-19T05:08:16.868 [main] com.comcast.cdn.traffic_control.traffic_router.core.secure.CertificatesPoller - Polling for certificates every 300000 msec
+INFO  2021-06-19T05:08:16.870 [pool-2-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - POSTing: https://trafficops.infra.svc.cluster.local:443/api/2.0/user/login; timeout is 15000
+INFO  2021-06-19T05:08:16.881 [Thread-3] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidPoller - Traffic Router published the ready state; calling init() on our reference to Connector with a listen port of 80
+INFO  2021-06-19T05:08:16.901 [Thread-5] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidPoller - Traffic Router published the ready state; calling init() on our reference to Connector with a listen port of 3443
+INFO  2021-06-19T05:08:16.901 [Thread-4] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidPoller - Traffic Router published the ready state; calling init() on our reference to Connector with a listen port of 3333
+INFO  2021-06-19T05:08:16.936 [Thread-6] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidPoller - Traffic Router published the ready state; calling init() on our reference to Connector with a listen port of 443
+INFO  2021-06-19T05:08:17.091 [pool-2-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/cdns/name/CDN-in-a-Box/sslkeys; timeout is 15000
+
+==> /opt/tomcat/logs/catalina.2021-06-19.log <==
+19-Jun-2021 05:08:17.691 INFO [main] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidNioProtocol.start LanguidNioProtocol Handler Start called; waiting for initialization to occur
+19-Jun-2021 05:08:17.691 INFO [main] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidNioProtocol.start LanguidNioProtocol Handler Initialization complete; calling super.start()
+19-Jun-2021 05:08:17.691 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+19-Jun-2021 05:08:17.701 INFO [main] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidNioProtocol.start LanguidNioProtocol Handler Start called; waiting for initialization to occur
+19-Jun-2021 05:08:17.702 INFO [main] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidNioProtocol.start LanguidNioProtocol Handler Initialization complete; calling super.start()
+19-Jun-2021 05:08:17.702 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-3333"]
+19-Jun-2021 05:08:17.704 INFO [main] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidNioProtocol.start LanguidNioProtocol Handler Start called; waiting for initialization to occur
+19-Jun-2021 05:08:17.704 INFO [main] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidNioProtocol.start LanguidNioProtocol Handler Initialization complete; calling super.start()
+19-Jun-2021 05:08:17.704 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["https-openssl-nio-3443"]
+19-Jun-2021 05:08:17.784 INFO [main] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidNioProtocol.start LanguidNioProtocol Handler Start called; waiting for initialization to occur
+19-Jun-2021 05:08:17.784 INFO [main] com.comcast.cdn.traffic_control.traffic_router.protocol.LanguidNioProtocol.start LanguidNioProtocol Handler Initialization complete; calling super.start()
+19-Jun-2021 05:08:17.785 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["https-openssl-nio-443"]
+19-Jun-2021 05:08:17.813 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [27694] milliseconds
+
+==> /opt/traffic_router/var/log/traffic_router.log <==
+INFO  2021-06-19T05:08:17.705 [main] com.comcast.cdn.traffic_control.traffic_router.protocol.RouterNioEndpoint - sslHostConfig: *.demo1.mycdn.ciab.test PKIX
+INFO  2021-06-19T05:08:17.706 [main] com.comcast.cdn.traffic_control.traffic_router.protocol.RouterNioEndpoint - sslHostConfig: default.invalid PKIX
+INFO  2021-06-19T05:08:17.707 [main] com.comcast.cdn.traffic_control.traffic_router.protocol.RouterNioEndpoint - sslHostConfig: trafficrouter PKIX
+INFO  2021-06-19T05:08:17.785 [main] com.comcast.cdn.traffic_control.traffic_router.protocol.RouterNioEndpoint - sslHostConfig: *.demo1.mycdn.ciab.test PKIX
+INFO  2021-06-19T05:08:17.785 [main] com.comcast.cdn.traffic_control.traffic_router.protocol.RouterNioEndpoint - sslHostConfig: default.invalid PKIX
+INFO  2021-06-19T05:08:17.785 [main] com.comcast.cdn.traffic_control.traffic_router.protocol.RouterNioEndpoint - sslHostConfig: trafficrouter PKIX
+INFO  2021-06-19T05:08:20.834 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:08:20.834 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:08:25.834 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:08:25.834 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:08:30.836 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:08:30.836 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:08:35.839 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:08:35.839 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:08:40.835 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:08:40.835 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:08:45.836 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:08:45.836 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:08:50.836 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:08:50.836 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:08:55.210 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - POSTing: https://trafficops.infra.svc.cluster.local:443/api/2.0/user/login; timeout is 15000
+INFO  2021-06-19T05:08:55.316 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/letsencrypt/dnsrecords/; timeout is 15000
+INFO  2021-06-19T05:08:55.385 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [LetsEncryptDnsChallengeWatcher] Successfully updated database /opt/traffic_router/db/letsencrypt.json
+INFO  2021-06-19T05:08:55.389 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:08:55.391 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - regional_geoblock.polling.url not configured; stopping service updater
+INFO  2021-06-19T05:08:55.391 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [RegionalGeoUpdater] Stopping service updater
+INFO  2021-06-19T05:08:55.391 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - anonymousip.policy.configuration not configured; stopping service updater and disabling feature
+INFO  2021-06-19T05:08:55.391 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [AnonymousIpConfigUpdater] Stopping service updater
+INFO  2021-06-19T05:08:55.391 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.ds.DeliveryService - DeliveryService 'demo1' has configured geolocation provider 'maxmindGeolocationService'
+INFO  2021-06-19T05:08:55.391 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.ds.DeliveryService - DeliveryService 'demo2' has configured geolocation provider 'maxmindGeolocationService'
+INFO  2021-06-19T05:08:55.393 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.secure.CertificatesPoller - Using custom fixed rate polling interval 300000 msec
+INFO  2021-06-19T05:08:55.393 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.secure.CertificatesPoller - Polling for certificates every 300000 msec
+INFO  2021-06-19T05:08:55.393 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Checking for certificate for demo1
+INFO  2021-06-19T05:08:55.393 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Waiting for https certificates to support new config 19d79526
+INFO  2021-06-19T05:08:55.394 [pool-2-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - POSTing: https://trafficops.infra.svc.cluster.local:443/api/2.0/user/login; timeout is 15000
+INFO  2021-06-19T05:08:55.459 [pool-2-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/cdns/name/CDN-in-a-Box/sslkeys; timeout is 15000
+INFO  2021-06-19T05:08:55.680 [pool-7-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - Loading properties from /opt/traffic_router/conf/traffic_monitor.properties
+INFO  2021-06-19T05:08:55.836 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:08:55.836 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:08:56.394 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Edge Traffic Router "ONLINE" trafficrouter @ CDN_in_a_Box_Edge; Geolocation [latitude=38.897663, longitude=-77.036574]
+ERROR 2021-06-19T05:08:56.397 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.edge.Node - trafficrouter.infra.svc.cluster.local - no IPv6 address configured!
+ERROR 2021-06-19T05:08:56.405 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.edge.Node - edge.infra.svc.cluster.local - no IPv6 address configured!
+INFO  2021-06-19T05:08:56.411 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.AbstractResourceWatcher - [ com.comcast.cdn.traffic_control.traffic_router.core.loc.FederationsWatcher ] Nothing changed in configuration
+INFO  2021-06-19T05:08:56.412 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.AbstractResourceWatcher - [ com.comcast.cdn.traffic_control.traffic_router.core.ds.SteeringWatcher ] Nothing changed in configuration
+INFO  2021-06-19T05:08:56.414 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.AbstractResourceWatcher - [ com.comcast.cdn.traffic_control.traffic_router.core.ds.LetsEncryptDnsChallengeWatcher ] Nothing changed in configuration
+INFO  2021-06-19T05:08:56.415 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.SignatureManager - DNSSEC not enabled; to enable, activate DNSSEC for this Traffic Router's CDN in Traffic Ops
+INFO  2021-06-19T05:08:56.416 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - Generating zone data
+INFO  2021-06-19T05:08:56.421 [pool-13-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - writing: /opt/traffic_router/var/auto-zones/demo1.mycdn.ciab.test.
+INFO  2021-06-19T05:08:56.422 [pool-13-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - writing: /opt/traffic_router/var/auto-zones/demo2.mycdn.ciab.test.
+INFO  2021-06-19T05:08:56.423 [pool-13-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - writing: /opt/traffic_router/var/auto-zones/mycdn.ciab.test.
+INFO  2021-06-19T05:08:56.423 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - Zone generation complete
+INFO  2021-06-19T05:08:56.423 [pool-13-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - Priming video.demo2.mycdn.ciab.test.
+INFO  2021-06-19T05:08:56.424 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - Priming zone cache completed in PT0S
+INFO  2021-06-19T05:08:56.424 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - old static zone cache size: 3, new static zone cache size: 3, old dynamic zone cache size: 1, new dynamic zone cache size: 1
+INFO  2021-06-19T05:08:56.424 [pool-15-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - starting maintenance on DYNAMIC zone cache: 734174ef. Current size: 1
+INFO  2021-06-19T05:08:56.425 [pool-15-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - completed maintenance on DYNAMIC zone cache: 734174ef
+INFO  2021-06-19T05:08:56.425 [pool-15-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - starting maintenance on STATIC zone cache: 7d8694f7. Current size: 3
+INFO  2021-06-19T05:08:56.425 [pool-15-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - completed maintenance on STATIC zone cache: 7d8694f7
+INFO  2021-06-19T05:08:56.428 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - Initialization of zone data completed
+INFO  2021-06-19T05:08:56.429 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exit: processConfig, successfully applied snapshot from Sat Jun 19 05:08:55 UTC 2021
+INFO  2021-06-19T05:09:00.837 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:09:00.837 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:09:05.838 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:09:05.838 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:09:10.838 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:09:10.838 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:09:12.003 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local/api/2.0/federations/all; timeout is 15000
+INFO  2021-06-19T05:09:12.045 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - POSTing: https://trafficops.infra.svc.cluster.local:443/api/2.0/user/login; timeout is 15000
+INFO  2021-06-19T05:09:12.168 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/steering; timeout is 15000
+INFO  2021-06-19T05:09:12.262 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] Successfully updated database /opt/traffic_router/db/steering.json
+INFO  2021-06-19T05:09:12.281 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.ds.SteeringRegistry - Finished updating steering registry
+INFO  2021-06-19T05:09:15.839 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:09:15.839 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:09:20.840 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:09:20.840 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:09:25.840 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:09:25.840 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:09:30.841 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:09:30.841 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:09:35.841 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:09:35.841 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:09:40.842 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:09:40.842 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:09:45.842 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:09:45.842 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:09:50.843 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:09:50.843 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:09:55.723 [pool-7-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - Loading properties from /opt/traffic_router/conf/traffic_monitor.properties
+INFO  2021-06-19T05:09:55.843 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:09:55.843 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:09:56.430 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/letsencrypt/dnsrecords/; timeout is 15000
+INFO  2021-06-19T05:09:56.484 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [LetsEncryptDnsChallengeWatcher] database unchanged.
+INFO  2021-06-19T05:10:00.844 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:10:00.844 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:10:05.844 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:10:05.845 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:10:10.845 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:10:10.845 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:10:12.045 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local/api/2.0/federations/all; timeout is 15000
+INFO  2021-06-19T05:10:12.281 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/steering; timeout is 15000
+INFO  2021-06-19T05:10:12.330 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] database unchanged.
+INFO  2021-06-19T05:10:15.846 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:10:15.846 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:10:20.846 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:10:20.846 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:10:25.847 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:10:25.847 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:10:30.847 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:10:30.848 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:10:35.847 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:10:35.847 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:10:40.848 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:10:40.848 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:10:45.848 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:10:45.848 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:10:50.849 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:10:50.850 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:10:55.769 [pool-7-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - Loading properties from /opt/traffic_router/conf/traffic_monitor.properties
+INFO  2021-06-19T05:10:55.849 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:10:55.849 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:10:56.484 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/letsencrypt/dnsrecords/; timeout is 15000
+INFO  2021-06-19T05:10:56.521 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [LetsEncryptDnsChallengeWatcher] database unchanged.
+INFO  2021-06-19T05:11:00.850 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:11:00.850 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:11:05.850 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:11:05.850 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:11:10.851 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:11:10.851 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:11:12.095 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local/api/2.0/federations/all; timeout is 15000
+INFO  2021-06-19T05:11:12.331 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/steering; timeout is 15000
+INFO  2021-06-19T05:11:12.376 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] database unchanged.
+INFO  2021-06-19T05:11:15.851 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:11:15.851 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:11:20.851 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:11:20.851 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:11:25.852 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:11:25.852 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:11:30.853 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:11:30.853 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:11:35.853 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:11:35.853 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:11:40.854 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:11:40.854 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:11:45.855 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:11:45.855 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:11:50.855 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:11:50.855 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:11:55.806 [pool-7-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - Loading properties from /opt/traffic_router/conf/traffic_monitor.properties
+INFO  2021-06-19T05:11:55.855 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:11:55.855 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:11:56.521 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/letsencrypt/dnsrecords/; timeout is 15000
+INFO  2021-06-19T05:11:56.555 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [LetsEncryptDnsChallengeWatcher] database unchanged.
+INFO  2021-06-19T05:12:00.856 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:12:00.856 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:12:05.856 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:12:05.857 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+
+==> /opt/traffic_router/var/log/access.log <==
+1624079527.010 qtype=DNS chi=1.0.20.158 rhi=- ttms=14.997 xn=31324 fqdn=video.demo1.mycdn.ciab.test. type=A class=IN rcode=NOERROR rtype=- rloc="-" rdtl=- rerr="-" ttl="60" ans="1.0.20.211"
+1624079527.008 qtype=DNS chi=1.0.20.158 rhi=- ttms=45.101 xn=51297 fqdn=video.demo1.mycdn.ciab.test. type=AAAA class=IN rcode=NOERROR rtype=GEO rloc="-" rdtl=LOCALIZED_DNS rerr="-" ttl="-" ans="-"
+1624079527.127 qtype=HTTP chi=1.0.20.137 rhi=- url="http://video.demo1.mycdn.ciab.test/" cqhm=GET cqhv=HTTP/1.1 rtype=MISS rloc="-" rdtl=DS_NO_BYPASS rerr="-" rgb="-" pssc=503 ttms=3.756 rurl="-" rurls="-" uas="curl/7.64.0" rh="-"
+
+==> /opt/traffic_router/var/log/traffic_router.log <==
+INFO  2021-06-19T05:12:10.857 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:12:10.857 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:12:12.139 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local/api/2.0/federations/all; timeout is 15000
+INFO  2021-06-19T05:12:12.376 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/steering; timeout is 15000
+INFO  2021-06-19T05:12:12.432 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] database unchanged.
+INFO  2021-06-19T05:12:15.857 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:12:15.857 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+
+==> /opt/traffic_router/var/log/access.log <==
+1624079537.672 qtype=HTTP chi=1.0.20.137 rhi=- url="http://video.demo1.mycdn.ciab.test/" cqhm=GET cqhv=HTTP/1.1 rtype=MISS rloc="-" rdtl=DS_NO_BYPASS rerr="-" rgb="-" pssc=503 ttms=0.419 rurl="-" rurls="-" uas="curl/7.64.0" rh="-"
+
+==> /opt/traffic_router/var/log/traffic_router.log <==
+INFO  2021-06-19T05:12:20.858 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:12:20.858 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:12:25.858 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:12:25.858 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:12:30.859 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:12:30.859 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+
+==> /opt/traffic_router/var/log/access.log <==
+1624079554.904 qtype=HTTP chi=1.0.20.137 rhi=- url="http://video.demo1.mycdn.ciab.test/" cqhm=GET cqhv=HTTP/1.1 rtype=MISS rloc="-" rdtl=DS_NO_BYPASS rerr="-" rgb="-" pssc=503 ttms=0.330 rurl="-" rurls="-" uas="curl/7.64.0" rh="-"
+
+==> /opt/traffic_router/var/log/traffic_router.log <==
+INFO  2021-06-19T05:12:35.859 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:12:35.859 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:12:40.859 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:12:40.860 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:12:45.860 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:12:45.861 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:12:50.861 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:12:50.861 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:12:55.837 [pool-7-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - Loading properties from /opt/traffic_router/conf/traffic_monitor.properties
+INFO  2021-06-19T05:12:55.861 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:12:55.861 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:12:56.555 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/letsencrypt/dnsrecords/; timeout is 15000
+INFO  2021-06-19T05:12:56.599 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [LetsEncryptDnsChallengeWatcher] database unchanged.
+
+==> /opt/traffic_router/var/log/access.log <==
+1624079579.332 qtype=DNS chi=1.0.30.195 rhi=- ttms=0.263 xn=17578 fqdn=video.demo1.mycdn.ciab.test. type=A class=IN rcode=NOERROR rtype=- rloc="-" rdtl=- rerr="-" ttl="60" ans="1.0.20.211"
+1624079579.324 qtype=DNS chi=1.0.30.195 rhi=- ttms=9.118 xn=22190 fqdn=video.demo1.mycdn.ciab.test. type=AAAA class=IN rcode=NOERROR rtype=GEO rloc="-" rdtl=LOCALIZED_DNS rerr="-" ttl="-" ans="-"
+1624079579.338 qtype=HTTP chi=1.0.20.137 rhi=- url="http://video.demo1.mycdn.ciab.test/" cqhm=GET cqhv=HTTP/1.1 rtype=MISS rloc="-" rdtl=DS_NO_BYPASS rerr="-" rgb="-" pssc=503 ttms=0.315 rurl="-" rurls="-" uas="curl/7.64.0" rh="-"
+
+==> /opt/traffic_router/var/log/traffic_router.log <==
+INFO  2021-06-19T05:13:00.861 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:13:00.861 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:13:05.862 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:13:05.862 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:13:10.862 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:13:10.862 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:13:12.178 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local/api/2.0/federations/all; timeout is 15000
+INFO  2021-06-19T05:13:12.432 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/steering; timeout is 15000
+INFO  2021-06-19T05:13:12.482 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] database unchanged.
+INFO  2021-06-19T05:13:15.863 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:13:15.863 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:13:20.862 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:13:20.862 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:13:25.863 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:13:25.863 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:13:30.864 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:13:30.864 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:13:35.864 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:13:35.864 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:13:40.864 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:13:40.864 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:13:45.865 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:13:45.865 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:13:50.865 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:13:50.865 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:13:55.518 [pool-2-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - POSTing: https://trafficops.infra.svc.cluster.local:443/api/2.0/user/login; timeout is 15000
+INFO  2021-06-19T05:13:55.613 [pool-2-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/cdns/name/CDN-in-a-Box/sslkeys; timeout is 15000
+INFO  2021-06-19T05:13:55.863 [pool-3-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - Loading properties from /opt/traffic_router/conf/traffic_monitor.properties
+INFO  2021-06-19T05:13:55.866 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:13:55.866 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:13:56.425 [pool-15-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - starting maintenance on DYNAMIC zone cache: 734174ef. Current size: 2
+INFO  2021-06-19T05:13:56.425 [pool-15-thread-2] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - starting maintenance on STATIC zone cache: 7d8694f7. Current size: 3
+INFO  2021-06-19T05:13:56.425 [pool-15-thread-2] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - completed maintenance on STATIC zone cache: 7d8694f7
+INFO  2021-06-19T05:13:56.426 [pool-15-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - completed maintenance on DYNAMIC zone cache: 734174ef
+INFO  2021-06-19T05:13:56.600 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/letsencrypt/dnsrecords/; timeout is 15000
+INFO  2021-06-19T05:13:56.610 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [LetsEncryptDnsChallengeWatcher] database unchanged.
+INFO  2021-06-19T05:14:00.868 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:14:00.868 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:14:05.867 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:14:05.867 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:14:10.867 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:14:10.868 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:14:12.209 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local/api/2.0/federations/all; timeout is 15000
+INFO  2021-06-19T05:14:12.486 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/steering; timeout is 15000
+INFO  2021-06-19T05:14:12.529 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] database unchanged.
+INFO  2021-06-19T05:14:15.868 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:14:15.868 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:14:20.868 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:14:20.868 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:14:25.869 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:14:25.869 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:14:30.869 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:14:30.869 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:14:35.869 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:14:35.869 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:14:40.870 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:14:40.870 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:14:45.871 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:14:45.871 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:14:50.870 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:14:50.870 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:14:55.868 [pool-3-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - Loading properties from /opt/traffic_router/conf/traffic_monitor.properties
+INFO  2021-06-19T05:14:55.871 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:14:55.871 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:14:56.610 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/letsencrypt/dnsrecords/; timeout is 15000
+INFO  2021-06-19T05:14:56.645 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [LetsEncryptDnsChallengeWatcher] database unchanged.
+INFO  2021-06-19T05:15:00.871 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:15:00.871 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:15:05.877 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:15:05.878 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:15:10.873 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:15:10.873 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:15:12.250 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local/api/2.0/federations/all; timeout is 15000
+INFO  2021-06-19T05:15:12.529 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/steering; timeout is 15000
+INFO  2021-06-19T05:15:12.595 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] database unchanged.
+INFO  2021-06-19T05:15:15.873 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:15:15.873 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:15:20.873 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:15:20.874 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:15:25.874 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:15:25.874 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:15:30.874 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:15:30.874 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:15:35.874 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:15:35.874 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:15:40.875 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:15:40.875 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:15:45.875 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:15:45.875 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:15:50.876 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:15:50.876 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:15:55.873 [pool-3-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - Loading properties from /opt/traffic_router/conf/traffic_monitor.properties
+INFO  2021-06-19T05:15:55.876 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:15:55.876 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:15:56.645 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/letsencrypt/dnsrecords/; timeout is 15000
+INFO  2021-06-19T05:15:56.680 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [LetsEncryptDnsChallengeWatcher] database unchanged.
+INFO  2021-06-19T05:16:00.877 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:16:00.877 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:16:05.877 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:16:05.877 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:16:10.878 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:16:10.878 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:16:12.301 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local/api/2.0/federations/all; timeout is 15000
+INFO  2021-06-19T05:16:12.596 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/steering; timeout is 15000
+INFO  2021-06-19T05:16:12.645 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] database unchanged.
+INFO  2021-06-19T05:16:15.878 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:16:15.878 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:16:20.878 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:16:20.878 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:16:25.879 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:16:25.879 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:16:30.879 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:16:30.879 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:16:35.879 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:16:35.879 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:16:40.879 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:16:40.880 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:16:45.881 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:16:45.881 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:16:50.881 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:16:50.881 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:16:55.878 [pool-3-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - Loading properties from /opt/traffic_router/conf/traffic_monitor.properties
+INFO  2021-06-19T05:16:55.881 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:16:55.881 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:16:56.680 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/letsencrypt/dnsrecords/; timeout is 15000
+INFO  2021-06-19T05:16:56.752 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [LetsEncryptDnsChallengeWatcher] database unchanged.
+INFO  2021-06-19T05:17:00.881 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:17:00.882 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:17:05.883 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:17:05.883 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:17:10.883 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:17:10.883 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:17:12.339 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local/api/2.0/federations/all; timeout is 15000
+INFO  2021-06-19T05:17:12.645 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/steering; timeout is 15000
+INFO  2021-06-19T05:17:12.699 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] database unchanged.
+INFO  2021-06-19T05:17:15.883 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:17:15.883 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:17:20.885 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:17:20.885 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:17:25.884 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:17:25.884 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:17:30.889 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:17:30.889 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:17:35.889 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:17:35.889 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:17:40.890 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:17:40.890 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:17:45.890 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:17:45.891 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:17:50.890 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:17:50.890 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:17:55.888 [pool-3-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - Loading properties from /opt/traffic_router/conf/traffic_monitor.properties
+INFO  2021-06-19T05:17:55.891 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:17:55.891 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:17:56.752 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/letsencrypt/dnsrecords/; timeout is 15000
+INFO  2021-06-19T05:17:56.797 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [LetsEncryptDnsChallengeWatcher] database unchanged.
+INFO  2021-06-19T05:18:00.892 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:18:00.892 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:18:05.892 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:18:05.892 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:18:10.892 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:18:10.892 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:18:12.372 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local/api/2.0/federations/all; timeout is 15000
+INFO  2021-06-19T05:18:12.700 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/steering; timeout is 15000
+INFO  2021-06-19T05:18:12.744 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] database unchanged.
+INFO  2021-06-19T05:18:15.893 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:18:15.893 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:18:20.893 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:18:20.893 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:18:25.894 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:18:25.894 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:18:30.893 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:18:30.893 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:18:35.894 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:18:35.894 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:18:40.895 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:18:40.895 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:18:45.894 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:18:45.894 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:18:50.895 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:18:50.895 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:18:55.659 [pool-2-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - POSTing: https://trafficops.infra.svc.cluster.local:443/api/2.0/user/login; timeout is 15000
+INFO  2021-06-19T05:18:55.755 [pool-2-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/cdns/name/CDN-in-a-Box/sslkeys; timeout is 15000
+INFO  2021-06-19T05:18:55.893 [pool-3-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - Loading properties from /opt/traffic_router/conf/traffic_monitor.properties
+INFO  2021-06-19T05:18:55.896 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:18:55.896 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:18:56.426 [pool-15-thread-2] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - starting maintenance on STATIC zone cache: 7d8694f7. Current size: 3
+INFO  2021-06-19T05:18:56.426 [pool-15-thread-2] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - completed maintenance on STATIC zone cache: 7d8694f7
+INFO  2021-06-19T05:18:56.426 [pool-15-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - starting maintenance on DYNAMIC zone cache: 734174ef. Current size: 2
+INFO  2021-06-19T05:18:56.427 [pool-15-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - completed maintenance on DYNAMIC zone cache: 734174ef
+INFO  2021-06-19T05:18:56.797 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/letsencrypt/dnsrecords/; timeout is 15000
+INFO  2021-06-19T05:18:56.807 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [LetsEncryptDnsChallengeWatcher] database unchanged.
+INFO  2021-06-19T05:19:00.897 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:19:00.897 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:19:05.896 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:19:05.896 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:19:10.896 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:19:10.897 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:19:12.426 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local/api/2.0/federations/all; timeout is 15000
+INFO  2021-06-19T05:19:12.744 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/steering; timeout is 15000
+INFO  2021-06-19T05:19:12.792 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] database unchanged.
+
+==> /opt/traffic_router/var/log/access.log <==
+1624079952.737 qtype=DNS chi=1.0.20.158 rhi=- ttms=1.970 xn=60509 fqdn=video.demo1.mycdn.ciab.test. type=A class=IN rcode=NOERROR rtype=- rloc="-" rdtl=- rerr="-" ttl="60" ans="1.0.20.211"
+1624079952.738 qtype=DNS chi=1.0.20.158 rhi=- ttms=4.208 xn=2146 fqdn=video.demo1.mycdn.ciab.test. type=AAAA class=IN rcode=NOERROR rtype=GEO rloc="-" rdtl=LOCALIZED_DNS rerr="-" ttl="-" ans="-"
+1624079952.747 qtype=HTTP chi=1.0.20.137 rhi=- url="http://video.demo1.mycdn.ciab.test/" cqhm=GET cqhv=HTTP/1.1 rtype=MISS rloc="-" rdtl=DS_NO_BYPASS rerr="-" rgb="-" pssc=503 ttms=0.306 rurl="-" rurls="-" uas="curl/7.64.0" rh="-"
+
+==> /opt/traffic_router/var/log/traffic_router.log <==
+INFO  2021-06-19T05:19:15.899 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:19:15.899 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+
+==> /opt/traffic_router/var/log/access.log <==
+1624079956.840 qtype=DNS chi=1.0.30.195 rhi=- ttms=3.681 xn=53360 fqdn=video.demo2.mycdn.ciab.test. type=A class=IN rcode=NXDOMAIN rtype=MISS rloc="-" rdtl=DS_NO_BYPASS rerr="-" ttl="-" ans="-"
+1624079956.832 qtype=DNS chi=1.0.30.195 rhi=- ttms=13.009 xn=57971 fqdn=video.demo2.mycdn.ciab.test. type=AAAA class=IN rcode=NXDOMAIN rtype=MISS rloc="-" rdtl=DS_NO_BYPASS rerr="-" ttl="-" ans="-"
+
+==> /opt/traffic_router/var/log/traffic_router.log <==
+INFO  2021-06-19T05:19:20.897 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:19:20.898 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:19:25.897 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:19:25.897 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+
+==> /opt/traffic_router/var/log/access.log <==
+1624079966.780 qtype=DNS chi=1.0.30.195 rhi=- ttms=0.309 xn=26786 fqdn=edge.demo1.mycdn.ciab.test. type=A class=IN rcode=NOERROR rtype=- rloc="-" rdtl=- rerr="-" ttl="60" ans="1.0.30.198"
+1624079966.776 qtype=DNS chi=1.0.30.195 rhi=- ttms=4.796 xn=29861 fqdn=edge.demo1.mycdn.ciab.test. type=AAAA class=IN rcode=NOERROR rtype=GEO rloc="-" rdtl=LOCALIZED_DNS rerr="-" ttl="-" ans="-"
+
+==> /opt/traffic_router/var/log/traffic_router.log <==
+INFO  2021-06-19T05:19:30.898 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:19:30.898 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:19:35.898 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:19:35.899 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:19:40.898 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:19:40.898 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+
+==> /opt/traffic_router/var/log/access.log <==
+1624079982.906 qtype=DNS chi=1.0.30.195 rhi=- ttms=1.608 xn=27356 fqdn=mid-01.demo1.mycdn.ciab.test. type=A class=IN rcode=NXDOMAIN rtype=GEO rloc="-" rdtl=LOCALIZED_DNS rerr="-" ttl="-" ans="-"
+1624079982.903 qtype=DNS chi=1.0.30.195 rhi=- ttms=8.202 xn=14049 fqdn=mid-01.demo1.mycdn.ciab.test. type=AAAA class=IN rcode=NXDOMAIN rtype=GEO rloc="-" rdtl=LOCALIZED_DNS rerr="-" ttl="-" ans="-"
+
+==> /opt/traffic_router/var/log/traffic_router.log <==
+INFO  2021-06-19T05:19:45.899 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:19:45.899 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:19:50.901 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:19:50.901 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+
+==> /opt/traffic_router/var/log/access.log <==
+1624079993.886 qtype=DNS chi=1.0.30.195 rhi=- ttms=0.291 xn=43775 fqdn=video.demo1.mycdn.ciab.test. type=A class=IN rcode=NOERROR rtype=- rloc="-" rdtl=- rerr="-" ttl="60" ans="1.0.20.211"
+1624079993.881 qtype=DNS chi=1.0.30.195 rhi=- ttms=8.672 xn=6659 fqdn=video.demo1.mycdn.ciab.test. type=AAAA class=IN rcode=NOERROR rtype=GEO rloc="-" rdtl=LOCALIZED_DNS rerr="-" ttl="-" ans="-"
+1624079993.894 qtype=HTTP chi=1.0.20.137 rhi=- url="http://video.demo1.mycdn.ciab.test/" cqhm=GET cqhv=HTTP/1.1 rtype=MISS rloc="-" rdtl=DS_NO_BYPASS rerr="-" rgb="-" pssc=503 ttms=0.204 rurl="-" rurls="-" uas="curl/7.64.0" rh="-"
+
+==> /opt/traffic_router/var/log/traffic_router.log <==
+INFO  2021-06-19T05:19:55.897 [pool-3-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - Loading properties from /opt/traffic_router/conf/traffic_monitor.properties
+INFO  2021-06-19T05:19:55.899 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:19:55.899 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:19:56.807 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/letsencrypt/dnsrecords/; timeout is 15000
+INFO  2021-06-19T05:19:56.847 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [LetsEncryptDnsChallengeWatcher] database unchanged.
+INFO  2021-06-19T05:20:00.900 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:20:00.900 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:20:05.900 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:20:05.901 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:20:10.901 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:20:10.901 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:20:12.466 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local/api/2.0/federations/all; timeout is 15000
+INFO  2021-06-19T05:20:12.793 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/steering; timeout is 15000
+INFO  2021-06-19T05:20:12.838 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] database unchanged.
+INFO  2021-06-19T05:20:15.901 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:20:15.901 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:20:20.901 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:20:20.902 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:20:25.902 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:20:25.902 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:20:30.902 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:20:30.903 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:20:35.905 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:20:35.905 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:20:40.903 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:20:40.903 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:20:45.903 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:20:45.903 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:20:50.904 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:20:50.904 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:20:55.902 [pool-3-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - Loading properties from /opt/traffic_router/conf/traffic_monitor.properties
+INFO  2021-06-19T05:20:55.904 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:20:55.904 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:20:56.848 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/letsencrypt/dnsrecords/; timeout is 15000
+INFO  2021-06-19T05:20:56.893 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [LetsEncryptDnsChallengeWatcher] database unchanged.
+INFO  2021-06-19T05:21:00.904 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:21:00.905 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:21:05.905 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:21:05.905 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:21:10.905 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:21:10.905 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:21:12.499 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local/api/2.0/federations/all; timeout is 15000
+INFO  2021-06-19T05:21:12.838 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/steering; timeout is 15000
+INFO  2021-06-19T05:21:12.902 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] database unchanged.
+INFO  2021-06-19T05:21:15.907 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:21:15.907 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:21:20.907 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:21:20.907 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:21:25.906 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:21:25.906 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:21:30.906 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:21:30.906 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:21:35.907 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:21:35.907 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:21:40.907 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:21:40.907 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:21:45.907 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:21:45.907 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:21:50.909 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:21:50.909 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:21:55.906 [pool-3-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - Loading properties from /opt/traffic_router/conf/traffic_monitor.properties
+INFO  2021-06-19T05:21:55.908 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:21:55.908 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:21:56.894 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/letsencrypt/dnsrecords/; timeout is 15000
+INFO  2021-06-19T05:21:56.923 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [LetsEncryptDnsChallengeWatcher] database unchanged.
+INFO  2021-06-19T05:22:00.909 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:22:00.909 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:22:05.909 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:22:05.909 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:22:10.909 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:22:10.909 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:22:12.531 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local/api/2.0/federations/all; timeout is 15000
+INFO  2021-06-19T05:22:12.902 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/steering; timeout is 15000
+INFO  2021-06-19T05:22:12.940 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] database unchanged.
+INFO  2021-06-19T05:22:15.913 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:22:15.914 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:22:20.911 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:22:20.912 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:22:25.911 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:22:25.911 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:22:30.912 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:22:30.912 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:22:35.911 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:22:35.911 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:22:40.912 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:22:40.912 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:22:45.914 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:22:45.914 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:22:50.913 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:22:50.913 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:22:55.911 [pool-3-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - Loading properties from /opt/traffic_router/conf/traffic_monitor.properties
+INFO  2021-06-19T05:22:55.913 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:22:55.913 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:22:56.924 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/letsencrypt/dnsrecords/; timeout is 15000
+INFO  2021-06-19T05:22:56.961 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [LetsEncryptDnsChallengeWatcher] database unchanged.
+INFO  2021-06-19T05:23:00.913 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:23:00.914 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:23:05.915 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:23:05.915 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:23:10.915 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:23:10.915 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:23:12.572 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local/api/2.0/federations/all; timeout is 15000
+INFO  2021-06-19T05:23:12.940 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/steering; timeout is 15000
+INFO  2021-06-19T05:23:12.981 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] database unchanged.
+INFO  2021-06-19T05:23:15.914 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:23:15.914 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:23:20.915 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:23:20.915 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:23:25.915 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:23:25.915 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:23:30.916 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:23:30.916 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:23:35.916 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:23:35.916 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:23:40.916 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:23:40.916 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:23:45.916 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:23:45.916 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:23:50.916 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:23:50.917 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:23:55.793 [pool-2-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - POSTing: https://trafficops.infra.svc.cluster.local:443/api/2.0/user/login; timeout is 15000
+INFO  2021-06-19T05:23:55.911 [pool-2-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/cdns/name/CDN-in-a-Box/sslkeys; timeout is 15000
+INFO  2021-06-19T05:23:55.915 [pool-3-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - Loading properties from /opt/traffic_router/conf/traffic_monitor.properties
+INFO  2021-06-19T05:23:55.917 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:23:55.917 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:23:56.426 [pool-15-thread-2] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - starting maintenance on STATIC zone cache: 7d8694f7. Current size: 3
+INFO  2021-06-19T05:23:56.426 [pool-15-thread-2] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - completed maintenance on STATIC zone cache: 7d8694f7
+INFO  2021-06-19T05:23:56.427 [pool-15-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - starting maintenance on DYNAMIC zone cache: 734174ef. Current size: 3
+INFO  2021-06-19T05:23:56.428 [pool-15-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - completed maintenance on DYNAMIC zone cache: 734174ef
+INFO  2021-06-19T05:23:56.961 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/letsencrypt/dnsrecords/; timeout is 15000
+INFO  2021-06-19T05:23:56.974 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [LetsEncryptDnsChallengeWatcher] database unchanged.
+INFO  2021-06-19T05:24:00.918 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:24:00.918 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:24:05.918 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:24:05.918 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:24:10.918 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:24:10.918 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:24:12.603 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local/api/2.0/federations/all; timeout is 15000
+INFO  2021-06-19T05:24:12.981 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/steering; timeout is 15000
+INFO  2021-06-19T05:24:13.031 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] database unchanged.
+INFO  2021-06-19T05:24:15.919 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:24:15.919 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:24:20.919 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:24:20.919 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:24:25.919 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:24:25.919 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:24:30.919 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:24:30.919 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:24:35.920 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:24:35.920 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:24:40.920 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:24:40.920 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:24:45.920 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:24:45.920 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:24:50.922 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:24:50.922 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:24:55.919 [pool-3-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - Loading properties from /opt/traffic_router/conf/traffic_monitor.properties
+INFO  2021-06-19T05:24:55.921 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:24:55.921 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:24:56.974 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/letsencrypt/dnsrecords/; timeout is 15000
+INFO  2021-06-19T05:24:57.006 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [LetsEncryptDnsChallengeWatcher] database unchanged.
+INFO  2021-06-19T05:25:00.922 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:25:00.922 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:25:05.922 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:25:05.922 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:25:10.923 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:25:10.923 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:25:12.638 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local/api/2.0/federations/all; timeout is 15000
+INFO  2021-06-19T05:25:13.031 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/steering; timeout is 15000
+INFO  2021-06-19T05:25:13.075 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] database unchanged.
+INFO  2021-06-19T05:25:15.922 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:25:15.923 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:25:20.923 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:25:20.923 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:25:25.924 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:25:25.924 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:25:30.924 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:25:30.924 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:25:35.924 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:25:35.924 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:25:40.924 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:25:40.924 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:25:45.925 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:25:45.925 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:25:50.925 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:25:50.926 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:25:55.923 [pool-3-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - Loading properties from /opt/traffic_router/conf/traffic_monitor.properties
+INFO  2021-06-19T05:25:55.925 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:25:55.925 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:25:57.007 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/letsencrypt/dnsrecords/; timeout is 15000
+INFO  2021-06-19T05:25:57.044 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [LetsEncryptDnsChallengeWatcher] database unchanged.
+INFO  2021-06-19T05:26:00.926 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:26:00.926 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:26:05.926 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:26:05.926 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:26:10.928 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:26:10.928 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:26:12.669 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local/api/2.0/federations/all; timeout is 15000
+INFO  2021-06-19T05:26:13.076 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/steering; timeout is 15000
+INFO  2021-06-19T05:26:13.127 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] database unchanged.
+INFO  2021-06-19T05:26:15.927 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:26:15.927 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:26:20.927 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:26:20.927 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:26:25.927 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:26:25.927 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:26:30.927 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:26:30.927 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:26:35.927 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:26:35.927 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:26:40.928 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:26:40.928 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:26:45.928 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:26:45.928 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:26:50.930 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:26:50.930 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:26:55.927 [pool-3-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - Loading properties from /opt/traffic_router/conf/traffic_monitor.properties
+INFO  2021-06-19T05:26:55.929 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:26:55.929 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:26:57.045 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/letsencrypt/dnsrecords/; timeout is 15000
+INFO  2021-06-19T05:26:57.114 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [LetsEncryptDnsChallengeWatcher] database unchanged.
+INFO  2021-06-19T05:27:00.930 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:27:00.930 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:27:05.934 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:27:05.934 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:27:10.930 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:27:10.930 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:27:12.699 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local/api/2.0/federations/all; timeout is 15000
+INFO  2021-06-19T05:27:13.128 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/steering; timeout is 15000
+INFO  2021-06-19T05:27:13.172 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] database unchanged.
+INFO  2021-06-19T05:27:15.930 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:27:15.930 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:27:20.931 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:27:20.931 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:27:25.931 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:27:25.931 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:27:30.931 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:27:30.932 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:27:35.932 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:27:35.932 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:27:40.932 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:27:40.932 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:27:45.933 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:27:45.933 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:27:50.933 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:27:50.933 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:27:55.931 [pool-3-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - Loading properties from /opt/traffic_router/conf/traffic_monitor.properties
+INFO  2021-06-19T05:27:55.933 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:27:55.933 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:27:57.115 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/letsencrypt/dnsrecords/; timeout is 15000
+INFO  2021-06-19T05:27:57.151 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [LetsEncryptDnsChallengeWatcher] database unchanged.
+INFO  2021-06-19T05:28:00.934 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:28:00.934 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:28:05.934 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:28:05.934 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:28:10.934 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:28:10.934 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:28:12.728 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local/api/2.0/federations/all; timeout is 15000
+INFO  2021-06-19T05:28:13.172 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/steering; timeout is 15000
+INFO  2021-06-19T05:28:13.211 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] database unchanged.
+INFO  2021-06-19T05:28:15.935 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:28:15.935 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:28:20.935 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:28:20.935 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:28:25.935 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:28:25.935 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:28:30.935 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:28:30.936 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:28:35.936 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:28:35.936 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:28:40.936 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:28:40.936 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:28:45.936 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:28:45.936 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:28:50.937 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:28:50.937 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:28:55.935 [pool-3-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - Loading properties from /opt/traffic_router/conf/traffic_monitor.properties
+INFO  2021-06-19T05:28:55.937 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:28:55.937 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:28:55.986 [pool-2-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - POSTing: https://trafficops.infra.svc.cluster.local:443/api/2.0/user/login; timeout is 15000
+INFO  2021-06-19T05:28:56.102 [pool-2-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/cdns/name/CDN-in-a-Box/sslkeys; timeout is 15000
+INFO  2021-06-19T05:28:56.426 [pool-15-thread-2] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - starting maintenance on STATIC zone cache: 7d8694f7. Current size: 3
+INFO  2021-06-19T05:28:56.426 [pool-15-thread-2] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - completed maintenance on STATIC zone cache: 7d8694f7
+INFO  2021-06-19T05:28:56.428 [pool-15-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - starting maintenance on DYNAMIC zone cache: 734174ef. Current size: 3
+INFO  2021-06-19T05:28:56.428 [pool-15-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.dns.ZoneManager - completed maintenance on DYNAMIC zone cache: 734174ef
+INFO  2021-06-19T05:28:57.152 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/letsencrypt/dnsrecords/; timeout is 15000
+INFO  2021-06-19T05:28:57.161 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [LetsEncryptDnsChallengeWatcher] database unchanged.
+INFO  2021-06-19T05:29:00.938 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:29:00.938 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:29:05.938 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:29:05.938 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:29:10.938 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:29:10.938 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:29:12.759 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local/api/2.0/federations/all; timeout is 15000
+INFO  2021-06-19T05:29:13.212 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/steering; timeout is 15000
+INFO  2021-06-19T05:29:13.263 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] database unchanged.
+INFO  2021-06-19T05:29:15.939 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:29:15.939 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:29:20.939 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:29:20.939 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:29:25.939 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:29:25.939 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:29:30.940 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:29:30.940 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:29:35.940 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:29:35.940 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:29:40.940 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:29:40.940 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:29:45.941 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:29:45.941 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:29:50.941 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:29:50.941 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:29:55.939 [pool-3-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.monitor.TrafficMonitorWatcher - Loading properties from /opt/traffic_router/conf/traffic_monitor.properties
+INFO  2021-06-19T05:29:55.941 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:29:55.941 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:29:57.161 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/letsencrypt/dnsrecords/; timeout is 15000
+INFO  2021-06-19T05:29:57.194 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [LetsEncryptDnsChallengeWatcher] database unchanged.
+INFO  2021-06-19T05:30:00.942 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:30:00.942 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:30:05.942 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:30:05.942 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:30:10.944 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:30:10.944 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:30:12.787 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local/api/2.0/federations/all; timeout is 15000
+INFO  2021-06-19T05:30:13.264 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.util.Fetcher - GETing: https://trafficops.infra.svc.cluster.local:443/api/2.0/steering; timeout is 15000
+INFO  2021-06-19T05:30:13.303 [pool-1-thread-1] com.comcast.cdn.traffic_control.traffic_router.core.loc.AbstractServiceUpdater - [SteeringWatcher] database unchanged.
+INFO  2021-06-19T05:30:15.943 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:30:15.943 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:30:20.944 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:30:20.944 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:30:25.943 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:30:25.943 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:30:30.944 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:30:30.944 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:30:35.945 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:30:35.945 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:30:40.945 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:30:40.945 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process
+INFO  2021-06-19T05:30:45.945 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Entered processConfig
+INFO  2021-06-19T05:30:45.946 [AsyncHttpClient-3-1] com.comcast.cdn.traffic_control.traffic_router.core.config.ConfigHandler - Exiting processConfig: No json data to process

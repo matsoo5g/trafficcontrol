@@ -20,10 +20,10 @@
 # Defines bash functions to consistently interact with the Traffic Ops API
 #
 # Build FQDNs
-export CDN_FQDN="$CDN_SUBDOMAIN.$TLD_DOMAIN"
+export CDN_FQDN="mycdn.ciab.test"
 export INFRA_FQDN="$INFRA_SUBDOMAIN.$TLD_DOMAIN"
 export DB_FQDN="$DB_SERVER.$INFRA_FQDN"
-export DNS_FQDN="$DNS_SERVER.$INFRA_FQDN"
+export DNS_FQDN="$DNS_SERVER.$TLD_DOMAIN"
 export EDGE_FQDN="$EDGE_HOST.$INFRA_FQDN"
 export MID_01_FQDN="$MID_01_HOST.$INFRA_FQDN"
 export MID_02_FQDN="$MID_02_HOST.$INFRA_FQDN"
@@ -31,7 +31,6 @@ export ORIGIN_FQDN="$ORIGIN_HOST.$INFRA_FQDN"
 export SMTP_FQDN="$SMTP_HOST.$INFRA_FQDN"
 export TO_FQDN="$TO_HOST.$INFRA_FQDN"
 export TM_FQDN="$TM_HOST.$INFRA_FQDN"
-export TP_FQDN="$TP_HOST.$INFRA_FQDN"
 export TR_FQDN="$TR_HOST.$INFRA_FQDN"
 export TS_FQDN="$TS_HOST.$INFRA_FQDN"
 export TV_FQDN="$TV_HOST.$INFRA_FQDN"
@@ -46,7 +45,7 @@ export CURLOPTS=${CURLOPTS:--LfsS}
 export CURLAUTH=${CURLAUTH:--k}
 export COOKIEJAR=$(mktemp)
 
-export MY_HOSTNAME="$(hostname -s)"
+#export MY_HOSTNAME="$(hostname -s)"
 
 login=$(mktemp)
 
@@ -176,7 +175,7 @@ to-enroll() {
 	export MY_HTTPS_PORT="${5:-443}"
 
 	export MY_NET_INTERFACE='eth0'
-	export MY_DOMAINNAME="$(dnsdomainname)"
+	export MY_DOMAINNAME="$INFRA_FQDN"
 	MY_IP="$(ifconfig $MY_NET_INTERFACE | grep 'inet ' | tr -s ' ' | cut -d ' ' -f 3)"
 	export MY_IP=${MY_IP#"addr:"}
 	export MY_GATEWAY="$(route -n | grep $MY_NET_INTERFACE | grep -E '^0\.0\.0\.0' | tr -s ' ' | cut -d ' ' -f2)"
@@ -276,7 +275,8 @@ to-enroll() {
 		else
 			cat
 		fi |
-		envsubst >"${ENROLLER_DIR}/servers/$HOSTNAME.json"
+		#envsubst >"${ENROLLER_DIR}/servers/$HOSTNAME.json"
+		envsubst >"/shared/watching_servers/$HOSTNAME.json"
 
 	sleep 3
 }
